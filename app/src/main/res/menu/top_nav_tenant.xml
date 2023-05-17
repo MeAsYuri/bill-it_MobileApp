@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black"
+    >
+
+    <item
+        android:id="@+id/notification"
+        android:icon="@drawable/notification"
+        android:title="Notification"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/concern"
+        android:icon="@drawable/ic_baseline_announcement_24"
+        android:title="Concern"
+        app:showAsAction="always" />
+
+<!--    <item-->
+<!--        android:id="@+id/logout"-->
+<!--        android:icon="@drawable/logout"-->
+<!--        android:title="Logout"-->
+<!--        app:showAsAction="always" />-->
+    <item
+        android:id="@+id/bills"
+        android:icon="@drawable/ic_baseline_receipt_24"
+        android:title="Bills" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:title="Settings" />
+
+</menu>

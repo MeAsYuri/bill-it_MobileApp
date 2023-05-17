@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragmentLandlord">
+
+    <!--    <ImageView-->
+    <!--        android:layout_width="342dp"-->
+    <!--        android:layout_height="312dp"-->
+    <!--        android:layout_marginLeft="0dp"-->
+    <!--        android:layout_marginTop="-60dp"-->
+    <!--        android:src="@drawable/cornercloud" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:gravity="center|top"
+        android:orientation="vertical">
+
+        <!--        <androidx.appcompat.widget.Toolbar-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="?attr/actionBarSize"-->
+        <!--            android:id="@+id/newsnav"-->
+        <!--            app:menu="@menu/news_nav_menu"-->
+        <!--            android:background="@color/orange">-->
+        <!--        </androidx.appcompat.widget.Toolbar>-->
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Meralco News"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#000000"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/getStartedMent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+
+            android:text="Official Website"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <WebView
+            android:id="@+id/webViewOfficial"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            />
+
+        <!--        <Button-->
+        <!--            android:id="@+id/meralcoTwtBtn"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_marginEnd="10dp"-->
+        <!--            android:paddingEnd="30dp"-->
+        <!--            android:backgroundTint="@color/blue"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="On Twitter"-->
+        <!--            android:textSize="15dp"-->
+        <!--            />-->
+
+
+
+
+    </LinearLayout>
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--        android:id="@+id/navbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="30dp"-->
+    <!--        android:background="@drawable/navbar_color"-->
+    <!--        app:itemTextColor="@drawable/icons"-->
+    <!--        app:itemIconTint="@drawable/icons"-->
+    <!--        app:menu="@menu/news_nav_menu"-->
+    <!--        />-->
+
+
+</FrameLayout>

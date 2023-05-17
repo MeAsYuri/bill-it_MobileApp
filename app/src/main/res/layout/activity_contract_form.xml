@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".Contract_creation.ContractForm">
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="245dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-60dp"
+        android:src="@drawable/cornercloudlight" />
+
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="90dp"
+            android:text="Contract"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note: READ the Contract first and scroll down to Proceed"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+
+    </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/rounded_square">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terms and Conditions"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D3D3"
+                    android:text="PURPOSE"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="That premises hereby leased shall be used exclusively by the LESSEE for residential purposes only and shall not be diverted to other uses. It is hereby expressly agreed that if at any time the premises are used for other purposes, the LESSOR shall have the right to rescind this contract without prejudice to its other rights under the law."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D3D3"
+                    android:text="TERM"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="This term of lease is for ONE (1) YEAR. from (Date) to (Date) inclusive. Upon its expiration, this lease may be renewed under such terms and conditions as my be mutually agreed upon by both parties, written notice of intention to renew the lease shall be served to the LESSOR not later than seven (7) days prior to the expiry date of the period herein agreed upon."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D3D3"
+                    android:text="RENTAL RATE"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The monthly rental rate for the leased premises shall be in PESOS: P__________, Philippine Currency. All rental payments shall be payable to the LESSOR."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D3D3"
+                    android:text="DEPOSIT"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="That the LESSEE shall deposit to the LESSOR upon signing of this contract and prior to move-in an amount equivalent to the rent for __ MONTH(S) or the sum of PESOS: AMOUNT IN WORDS (P 00,000.00), Philippine Currency. wherein the two (2) months deposit shall be applied as rent for the 11th and 12th months and the remaining one (1) month deposit shall answer partially for damages and any other obligations, for utilities such as Water, Electricity, CATV, Telephone, Association Dues or resulting from violation(s) of any of the provision of this contract."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D3D3"
+                    android:text="LATE FEE"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="That the LESSEE shall pay for rent/water/electrity after the day of __ each month will be deemed as late; and if rent/water/electricity is not paid within __ week(s) after such due date, the LESSEE agrees to pay a late charge of __% of the actual amount."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D3D3"
+                    android:text="DEFAULT PAYMENT"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="In case of default by the LESSEE in the payment of the rent, such as when the checks are dishonored, the LESSOR at its option may terminate this contract and eject the LESSEE. The LESSOR has the right to padlock the premises when the LESSEE is in default of payment for __ month(s) and may forfeit whatever rental deposit or advances have been given by the LESSEE."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D3D3"
+                    android:text="SUB-LEASE"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The LESSEE shall not directly orindirectly sublet, allow or permit the leased premises to be occupied in whole or in part by any person, form or corporation, neither shall the LESSEE assign its rights hereunder to any other person or entity and no right of interest thereto or therein shall be conferred on or vested in anyone by the LESSEE without the LESSOR'S written approval."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D3D3"
+                    android:text="PUBLIC UTILITIES"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The LESSEE shall pay for its telephone, electric, cable TV, water, Internet, association dues and other public services and utilities during the duration of the lease."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D3D3"
+                    android:text="FORCE MAJEURE"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="If whole or any part of the leased premises shall be destroyed or damaged by fire, flood, lightning, typhoon, earthquake, storm, riot or any other unforeseen disabling cause of acts of God, as to render the leased premises during the term substantially unfit for use and occupation of the LESSEE, then this lease contract may be terminated without compensation by the LESSOR or by the LESSEE by notice in writing to the other."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D3D3"
+                    android:text="LESSOR'S RIGHT OF ENTRY"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The LESSOR or its authorized agent shall after giving due notice to the LESSEE shall have the right to enter the premises in the presence of the LESSEE or its representative at any reasonable hour to examine the same or make repairs therein or for the operation and maintenance of the building or to exhibit the leased premises to prospective LESSEE, or for any other lawful purposes which it may deem necessary."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D3D3"
+                    android:text="EXPIRATION OF LEASE"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="At the expiration of the term of this lease or cancellation thereof, as herein provided, the LESSEE will promptly deliver to the LESSOR the leased premises with all corresponding keys and in as good and tenable condition as the same is now, ordinary wear and tear expected devoid of all occupants, movable furniture, articles and effects of any kind. Non-compliance with the terms of this clause by the LESSEE will give the LESSOR the right, at the latter's option, to refuse to accept the delivery of the premises and compel the LESSEE to pay rent therefrom at the same rate plus Twenty Five (25) % thereof as penalty until the LESSEE shall have complied with the terms hereof. The same penalty shall be imposed in case the LESSEE fails to leave the premises after the expiration of this Contract of Lease or termination for any reason whatsoever."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="#D6D3D3"
+                    android:text="JUDICIAL RELIEF"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Should any one of the parties herein be compelled to seek judicial relief against the other, the losing party shall pay an amount of One Hundred (100) % of the amount clamed in the complaint as attorney's fees which shall in no case be less than P50,000.00 pesos in addition to other cost and damages which the said party may be entitled to under the law."
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/proceedBtn"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="21dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Proceed" />
+            </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+
+
+</RelativeLayout>

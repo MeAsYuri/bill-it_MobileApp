@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Meralco"
+
+        android:id="@+id/meralco"/>
+    <item android:title="Maynilad"
+
+        android:id="@+id/maynilad"/>
+    <item android:title="Manila Water"
+
+        android:id="@+id/manilaWater"/>
+</menu>

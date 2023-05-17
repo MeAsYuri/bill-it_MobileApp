@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluebg"
+    tools:context=".Help">
+
+    <ImageView
+        android:layout_width="342dp"
+        android:layout_height="312dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-60dp"
+        android:src="@drawable/cornercloudlight" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/helpTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="160dp"
+        android:layout_centerHorizontal="true"
+        android:text="Help"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/helpTxt">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/helpTxt">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:text="FAQs"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentPadding="20dp"
+                app:cardBackgroundColor="#40FFFFFF"
+                android:onClick="expandPassword">
+
+                <LinearLayout
+                    android:id="@+id/passLinear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:animateLayoutChanges="true">
+
+                    <!--                <LinearLayout-->
+                    <!--                    android:layout_width="wrap_content"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:orientation="horizontal">-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="I forgot my password. How can I reset it?"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <!--                    <androidx.appcompat.widget.AppCompatButton-->
+                    <!--                        android:id="@+id/arrowDown"-->
+                    <!--                        android:layout_width="30dp"-->
+                    <!--                        android:layout_height="30dp"-->
+                    <!--                        android:background="@drawable/arrow_down"-->
+                    <!--                        android:layout_marginLeft="45dp"/>-->
+
+                    <!--                </LinearLayout>-->
+
+                    <TextView
+                        android:id="@+id/faqPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Below the password form on the login page, you will find a button that allows you to reset your password when clicked."
+                        android:visibility="gone"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentPadding="20dp"
+                app:cardBackgroundColor="#40FFFFFF"
+                android:onClick="expandSubmeter">
+
+                <LinearLayout
+                    android:id="@+id/submeterLinear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How do I scan my submeter?"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/faqSubmeter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="To scan your submeter, simply click on the calculate button located at the bottom center of your phone and choose your electricity or water provider. Choose the OCR button, and place your camera on your submeter making sure it can see the numbers, click capture. You can also upload a picture of your submeter instead and click read text."
+                        android:visibility="gone"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentPadding="20dp"
+                app:cardBackgroundColor="#40FFFFFF"
+                android:onClick="expandHistory">
+
+                <LinearLayout
+                    android:id="@+id/historyLinear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Where can I see my billing history?"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/faqHistory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your billing history is located at the bottom right corner of the app. You can view your electricity and water bills altogether."
+                        android:visibility="gone"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentPadding="20dp"
+                app:cardBackgroundColor="#40FFFFFF"
+                android:onClick="expandCalculate">
+
+                <LinearLayout
+                    android:id="@+id/calculateLinear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How can I calculate my water or electricity bill?"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/faqCalculate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="After scanning your submeter, you can now input all the other information needed. After filling all fields, click calculate and wait for the receipt to generate."
+                        android:visibility="gone"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:text="PAYMENTS"
+                android:textColor="#000000"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentPadding="20dp"
+                app:cardBackgroundColor="#40FFFFFF"
+                android:onClick="expandPayOpt">
+
+                <LinearLayout
+                    android:id="@+id/payoptLinear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="What are the payment options?"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/faqPaymentOpt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="For cashless option, you can pay your billing statements through the provided GCash QR code on the application. You can also pay your landlord through cash personally."
+                        android:visibility="gone"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentPadding="20dp"
+                app:cardBackgroundColor="#40FFFFFF"
+                android:onClick="expandGcash">
+
+                <LinearLayout
+                    android:id="@+id/gcashLinear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="How can I pay through GCash?"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/faqGcash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="You can pay your bills individually (water, electricity, rent) through GCash by accessing the Billing History on the bottom right corner of the app."
+                        android:visibility="gone"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentPadding="20dp"
+                app:cardBackgroundColor="#40FFFFFF"
+                android:onClick="expandPayStat">
+
+                <LinearLayout
+                    android:id="@+id/paystatLinear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:animateLayoutChanges="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment Status"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="16sp"/>
+
+                    <TextView
+                        android:id="@+id/faqPayStat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="The Billing History on the bottom right corner of the app also allows you to check the payment status of your bills. Just choose which billing date you paid and find the payment status on the bill."
+                        android:visibility="gone"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/backSetButton"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:background="#272A79"
+                android:textColor="@color/black"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:background="@android:drawable/bottom_bar"-->
+        <!--            android:gravity="center_vertical">-->
+
+        <!--            <Button-->
+        <!--                android:id="@+id/backSetButton"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_weight="1"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Back"-->
+        <!--                android:background="#272A79"-->
+        <!--                android:textColor="@color/black" />-->
+
+
+        <!--        </LinearLayout>-->
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluebg"
+    tools:context=".Payment.PaymentWater">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="342dp"
+            android:layout_height="312dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-60dp"
+            android:src="@drawable/cornercloudlight" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Now | Water"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scan QR Code to Pay"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+            <!--    try fetching id-->
+                <TextView
+                    android:id="@+id/tenantIdWater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tenant ID"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:id="@+id/qrPic"
+                android:layout_width="300dp"
+                android:layout_height="500dp"
+                app:srcCompat="@drawable/border"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount:"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/amountWater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Receipt:"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="5dp">
+
+                <Button
+                    android:id="@+id/chooseFileWater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose File"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/fileNameWater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="File"
+                    android:textSize="18dp"
+                    android:layout_marginStart="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp">
+
+                <Button
+                    android:id="@+id/cancelPaymentWater"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/gray"/>
+
+                <Button
+                    android:id="@+id/uploadPaymentWater"
+                    android:layout_width="187dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Upload Payment"
+                    android:backgroundTint="@color/green"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/downloadContract"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Download"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/green"/>
+
+            <!--    <View-->
+            <!--        android:layout_width="match_parent"-->
+            <!--        android:layout_height="1dp"-->
+            <!--        android:background="@color/lightgray"-->
+            <!--        android:layout_marginTop="10dp"/>-->
+
+            <!--    <Button-->
+            <!--        android:id="@+id/uploadPaymentWater"-->
+            <!--        android:layout_width="187dp"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_gravity="center"-->
+            <!--        android:backgroundTint="@color/green"-->
+            <!--        android:text="Upload Payment"-->
+            <!--        android:layout_marginTop="15dp"-->
+            <!--        android:layout_marginBottom="10dp"/>-->
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

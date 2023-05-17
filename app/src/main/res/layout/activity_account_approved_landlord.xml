@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container_view"
+    tools:context=".AccountApprovedLandlord"
+    android:background="@color/blue">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:background="@color/orange" />
+
+    <View
+        android:id="@+id/wavelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/topView"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/wave" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="10dp"
+        app:srcCompat="@drawable/ic_baseline_check_circle_24"
+        app:tint="@color/green"/>
+
+    <TextView
+        android:id="@+id/messageTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="65dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Welcome!"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="65dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="Welcome!"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/messageBody"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageTitle"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="Your account has been verified by an admin. You may now proceed to use the app."
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/confirmBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/messageBody"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/darkorange"
+        android:text="Confirm"
+        android:textColor="#000000" />
+
+</RelativeLayout>

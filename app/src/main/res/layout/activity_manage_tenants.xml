@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    tools:context=".ManageTenants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="342dp"
+            android:layout_height="312dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-60dp"
+            android:src="@drawable/cornercloud" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/concernTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Manage Tenants"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_marginTop="50dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/verifiedTenant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Verified"
+                        android:backgroundTint="@color/green"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="3dp"/>
+
+                    <Button
+                        android:id="@+id/unverifiedTenant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unverified"
+                        android:backgroundTint="@color/red"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"/>
+
+                    <Button
+                        android:id="@+id/tempAccTenant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Temporary Account"
+                        android:backgroundTint="#C9E1EB"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="5dp"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/pdfDownload"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Download PDF"
+                android:backgroundTint="@color/gray"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                />
+            <Button
+                android:id="@+id/pdfDownload2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Download PDF"
+                android:backgroundTint="@color/gray"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/pdfDownload3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Download PDF"
+                android:backgroundTint="@color/gray"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/tenantsContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

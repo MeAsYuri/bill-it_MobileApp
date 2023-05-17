@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contract_creation.ContractSigning"
+    android:background="@color/orange">
+
+    <ImageView
+        android:layout_width="342dp"
+        android:layout_height="312dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-60dp"
+        android:src="@drawable/cornercloud" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/logo" />
+    <TextView
+        android:id="@+id/Lname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+    <TextView
+        android:id="@+id/LpenaltyPercent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+    <TextView
+        android:id="@+id/LpenaltyWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+    <TextView
+        android:id="@+id/LrentFee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+    <TextView
+        android:id="@+id/LhouseNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+    <TextView
+        android:id="@+id/Lstreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+    <TextView
+        android:id="@+id/Lsubd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+    <TextView
+        android:id="@+id/Lbrgy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+    <TextView
+        android:id="@+id/Lcity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+    <TextView
+        android:id="@+id/Lzip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+    <TextView
+        android:id="@+id/LformattedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+    <TextView
+        android:id="@+id/LformattedDate2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+    <TextView
+        android:id="@+id/Ldeposit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"></TextView>
+
+    <ImageView
+        android:id="@+id/helpbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="340dp"
+        app:srcCompat="@drawable/help" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="370dp"
+        app:srcCompat="@drawable/settings"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="339dp"
+        android:layout_height="453dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="197dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="82dp"
+        android:background="@drawable/rounded_square" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="221dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="477dp"
+        android:text="Contract Signing"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="269dp"
+        android:layout_marginBottom="427dp"
+        android:text="To continue:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="265dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="77dp"
+        android:layout_marginBottom="341dp"
+        android:text="Download the PDF format of the contract. Have it signed both by LESSOR and LESSEE"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/downloadPDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="275dp"
+        android:backgroundTint="@color/blue"
+        android:text="Download PDF"
+        android:textColor="#090909"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="265dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="168dp"
+        android:text="Once the contract is signed, Tap the button Proceed to upload the Signed Contract."
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/proceedBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="109dp"
+        android:backgroundTint="@color/blue"
+        android:text="Proceed"
+        android:textAlignment="textEnd"
+        android:textColor="#090909"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="270dp"
+        android:layout_marginBottom="282dp"
+        android:background="@drawable/download_icon" />
+
+
+    <ImageView
+        android:id="@+id/contractImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+
+
+</RelativeLayout>

@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:fillViewport="true"
+    android:gravity="center"
+    tools:context=".Contract_creation.ContractSpecs">
+
+
+    <ImageView
+        android:layout_width="342dp"
+        android:layout_height="312dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-60dp"
+        android:src="@drawable/cornercloud" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="90dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/helpbut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/help" />
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="370dp"
+        android:layout_marginTop="50dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/settings" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/addTenanttxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="120dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Contract Specification"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/note"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center"
+                    android:text="Note: Edit the contract rules and specifications according to your conditions"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:id="@+id/scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+
+                    android:background="@drawable/addtenantlayout"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1000dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="50dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:text="Provide the details below"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/newlogTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_square"
+                            android:text="Rent Fees"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:id="@+id/layout_edit_text2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:gravity="center"
+                                android:inputType="number"
+                                android:orientation="vertical" />
+
+
+                            <LinearLayout
+                                android:id="@+id/layout_edit_remove"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:gravity="center"
+                                android:orientation="vertical" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/addRentFee"
+                            android:layout_width="218dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:backgroundTint="@color/orange"
+                            android:paddingStart="20dp"
+                            android:text="Add Rent Fees"
+                            android:textColor="@color/black" />
+
+                        <TextView
+                            android:id="@+id/penlaty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Penalty (%) (Input 0 if you do not want to have a penalty)."
+                            android:textColor="@color/gray"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/penaltyPercent"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/roundborder"
+                            android:hint="Input Percentage"
+                            android:inputType="number"
+                            android:paddingStart="20dp"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/penlatyWeektext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Penalty will take effect after: (weeks)"
+                            android:textColor="@color/gray"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/penaltyWeek"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/roundborder"
+                            android:hint="Input number of weeks"
+                            android:inputType="number"
+                            android:paddingStart="20dp"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="16dp" />
+
+<!--                        <TextView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:background="@drawable/grey_square"-->
+<!--                            android:text="Previous Records"-->
+<!--                            android:textAlignment="center"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="30dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:text="Water Previous Total Reading"-->
+<!--                            android:textColor="@color/gray"-->
+<!--                            android:textSize="18dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/previousReadWater"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_gravity="left"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_marginRight="20dp"-->
+<!--                            android:layout_marginBottom="20dp"-->
+<!--                            android:background="@drawable/roundborder"-->
+<!--                            android:hint="Input Water Previous Reading"-->
+<!--                            android:inputType="number"-->
+<!--                            android:paddingStart="20dp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="16dp" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:text="Water Previous Total Bill Amount"-->
+<!--                            android:textColor="@color/gray"-->
+<!--                            android:textSize="18dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/previousTotalBillWater"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_gravity="left"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_marginRight="20dp"-->
+<!--                            android:layout_marginBottom="20dp"-->
+<!--                            android:background="@drawable/roundborder"-->
+<!--                            android:hint="Water Electricity Total Bill Amount"-->
+<!--                            android:inputType="number"-->
+<!--                            android:paddingStart="20dp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="16dp" />-->
+
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:text="Electricity Previous Total Reading"-->
+<!--                            android:textColor="@color/gray"-->
+<!--                            android:textSize="18dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/previousReadElec"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_gravity="left"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_marginRight="20dp"-->
+<!--                            android:layout_marginBottom="20dp"-->
+<!--                            android:background="@drawable/roundborder"-->
+<!--                            android:hint="Input Electricity Previous Reading"-->
+<!--                            android:inputType="number"-->
+<!--                            android:paddingStart="20dp"-->
+
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="16dp" />-->
+
+<!--                        <TextView-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_gravity="left"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:text="Electricity Previous Total Bill Amount"-->
+<!--                            android:textColor="@color/gray"-->
+<!--                            android:textSize="18dp"-->
+<!--                            android:textStyle="bold" />-->
+
+<!--                        <EditText-->
+<!--                            android:id="@+id/previousTotalBillElec"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="40dp"-->
+<!--                            android:layout_gravity="left"-->
+<!--                            android:layout_marginLeft="20dp"-->
+<!--                            android:layout_marginTop="10dp"-->
+<!--                            android:layout_marginRight="20dp"-->
+<!--                            android:layout_marginBottom="20dp"-->
+<!--                            android:background="@drawable/roundborder"-->
+<!--                            android:hint="Input Electricity Total Bill Amount"-->
+<!--                            android:inputType="number"-->
+<!--                            android:paddingStart="20dp"-->
+<!--                            android:textColor="@color/black"-->
+<!--                            android:textSize="16dp" />-->
+
+
+                        <TextView
+                            android:id="@+id/providerOptions"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/grey_square"
+                            android:text="Providers"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/error_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Electricity"
+                            android:textColor="@color/gray"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+
+                        <RadioButton
+                            android:id="@+id/meralcoRBtn"
+                            android:layout_width="112dp"
+                            android:layout_height="wrap_content"
+                            android:text="Meralco" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Water"
+                            android:textColor="@color/gray"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <RadioGroup
+                            android:id="@+id/waterRGroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <RadioButton
+                                android:id="@+id/mayniladRBtn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Maynilad" />
+
+                            <RadioButton
+                                android:id="@+id/manilaRBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Manila Water" />
+                        </RadioGroup>
+
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/roundborder"
+                            android:enabled="false"
+                            android:hint="ID"
+                            android:inputType="text"
+                            android:paddingStart="20dp"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="317dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/grey_square"
+                            android:text="Terms and Conditions"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/layout_edit_text3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_add_edit_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:backgroundTint="@color/orange"
+                            android:gravity="center"
+                            android:paddingStart="20dp"
+                            android:text="Add More Terms"
+                            android:textColor="@color/black" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/cancelBtn"
+                                android:layout_width="150dp"
+                                android:layout_height="60dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:backgroundTint="@color/orange"
+                                android:text="Cancel"
+                                android:textColor="@color/black" />
+
+                            <Button
+                                android:id="@+id/proceedBtn"
+                                android:layout_width="150dp"
+                                android:layout_height="60dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginBottom="21dp"
+                                android:backgroundTint="@color/orange"
+                                android:text="Proceed"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </ScrollView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="heheheh"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="heheheh"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/house_noTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="heheheh"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/streetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="heheheh"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/subdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="heheheh"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/brgyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="heheheh"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/cityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="heheheh"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/zipcodeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="heheheh"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+</RelativeLayout>
+

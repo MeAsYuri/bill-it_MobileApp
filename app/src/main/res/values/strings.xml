@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Billit_all</string>
+
+    //Headings
+    <string name="heading_one">Optical Character Recognition</string>
+    <string name="heading_two">Accessibility of Billing History</string>
+    <string name="heading_three">Hassle-Free Payments</string>
+    <string name="heading_fourth">Pay Anywhere</string>
+
+    //Description
+    <string name="desc_one">Enables the option to scan submeters directly using mobile devices for automated computation</string>
+    <string name="desc_two">Users can access their billing history online for transparency between landlords and tenants. </string>
+    <string name="desc_three">The option to pay online via GCash for those tenants who prefer cashless transactions</string>
+    <string name="desc_fourth">Pay via GCash qr code. Anytime. Anywhere.</string>
+    <string name="select_room_number">Select Room Number</string>
+    <string name="billing_statements">Billing Statements</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="concern">Dropdown Menu</string>
+    <string name="concern_list">Select Concern</string>
+    <string name="title_activity_bills_tenant">Bills_Tenant</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_reg_upload_img">RegUploadImg</string>
+    <string name="title_activity_report_issue">ReportIssue</string>
+    <string name="title_activity_notif_reminder">NotifReminder</string>
+
+</resources>

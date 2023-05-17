@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_marginBottom="10dp">-->
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Date:"-->
+<!--            android:textColor="#000"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/date"-->
+<!--                android:layout_width="186dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="date"-->
+<!--                android:textColor="#000"-->
+<!--                android:textSize="20sp" />-->
+<!--        </LinearLayout>-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textAlignment="center"
+            android:text="Date"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/grey_square"/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electricity"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/elec_due_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EC:"
+            android:textAlignment="center"
+
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Water"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/water_due_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WC:"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textAlignment="center"
+            android:text="Total Consumption"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/grey_square"/>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electricity"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/elec_consump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EC:"
+            android:textAlignment="center"
+
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Water"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/water_consump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WC:"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Bill Amount"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/grey_square"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electricity"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/elec_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EA:"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Water"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/water_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WA:"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:textAlignment="center"
+            android:text="Unit Consumption"
+            android:background="@drawable/grey_square"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electricity"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/elec_unitConsump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EUC:"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Water"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/water_unitConsump"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WUC:"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:background="@drawable/grey_square"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unit Amount"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electricity"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/elec_unitAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EUA:"
+            android:textAlignment="center"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Water"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/water_unitAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WUA:"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:background="@drawable/grey_square"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Electricity"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/elec_paid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EP:"
+            android:textAlignment="center"
+            android:textColor="#188F03"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Water"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/water_paid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WP:"
+            android:textAlignment="center"
+            android:textColor="#188F03"
+            android:textSize="20sp" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rent"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rent_paid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RP:"
+            android:textAlignment="center"
+            android:textColor="#188F03"
+            android:textSize="20sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

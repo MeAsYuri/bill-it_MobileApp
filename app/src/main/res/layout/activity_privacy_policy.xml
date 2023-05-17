@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluebg"
+    tools:context=".PrivacyPolicy">
+
+    <ImageView
+        android:layout_width="342dp"
+        android:layout_height="312dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-60dp"
+        android:src="@drawable/cornercloudlight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="105dp"
+            android:layout_marginTop="15dp"
+            android:text="Privacy Policy"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:lineHeight="25dp"
+                    android:gravity="left|center"
+                    android:text="We, in Bill-It, value and respect the privacy as well as the security and protection of our customers’ personal data.\n\nThis Policy sets out to inform our customers and other owners of personal data of our adherence to the privacy principle of: transparency, legitimate purpose, and proportionality, and such other relevant requirements in the collection, processing, storage, transmission and retention of personal data as required by applicable privacy laws that specifically include the Philippine Data Privacy Act of 2012 (“DPA”), and its implementing rules and regulations (“DPA IRR”). This also outlines how Bill-It collects and processes your personal information during the use of Bill-It platforms such as but not limited to the Bill-It app and website.\n\n
+
+We may update this Privacy Policy to reflect needed changes in our policy to comply with the law. In such cases, we encourage you to check for updates on our Privacy Policy, if notifies. This is available in our website or app for your information and reference.\n\n
+
+I. TYPES OF PERSONAL DATA WE USE\n
+> Your Profile Information. You give us your information when you register on the Application, including your username, password, email address, and contact number, information you disclose in your user profile, your photograph, and other additional information.\n\n
+
+II. HOW DE WE USE YOUR INFORMATION\n
+> The personal information we collect from you will be used in organizing data that are connected to your account. It will also be used for billing and payment purposes of the application.
+\n> We may use your personal information to verify identity, assist with identification of users, and to determine appropriate services.
+\n> Often times, we may use your personal information to send important notices, such as your payment bill and changes to our terms and conditions, and policies.
+\n> We may also use your personal information for internal purposes such as auditing, data analysis, and research to improve Bill-Its services.
+\n> We may also use your information for third parties as part of the service such as accessing you details for online payment.
+
+"
+                    android:textColor="#000000"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@android:drawable/bottom_bar"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/backSetButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        android:background="#272A79"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

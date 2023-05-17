@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--    </RelativeLayout>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        app:cardBackgroundColor="@color/orange">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/billTypePic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"
+                android:background="@drawable/circular_border"/>
+
+            <TextView
+                android:id="@+id/billType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toRightOf="@+id/billTypePic"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/divider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="|"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/billType"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:id="@+id/billDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/divider"
+                android:layout_marginStart="5dp"/>
+
+            <View
+                android:id="@+id/headerView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/billType"/>
+
+            <TextView
+                android:id="@+id/unitNumTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unit no: "
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/headerView"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/unitNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/headerView"
+                android:layout_toRightOf="@+id/unitNumTitle"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:id="@+id/billAmountTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount:"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/unitNumTitle"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/billAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/unitNumTitle"
+                android:layout_toRightOf="@id/billAmountTitle"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:id="@+id/billPenaltyTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Penalty:"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/billAmountTitle"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/billPenalty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/billAmountTitle"
+                android:layout_toRightOf="@id/billPenaltyTitle"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/billBalanceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Balance:"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/billPenaltyTitle"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/billBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_below="@id/billPenaltyTitle"
+                android:layout_toRightOf="@id/billBalanceTitle"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"/>
+
+            <CheckBox
+                android:id="@+id/cashCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash Payment"
+                android:layout_gravity="left"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/billBalance"/>
+
+
+            <EditText
+                android:id="@+id/cashReceived"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="18dp"
+                android:layout_below="@id/cashCheckbox"
+                android:layout_marginTop="10dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/concerns_list_bg"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/confirmCash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirm"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/green"
+                android:layout_below="@id/cashReceived"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".WelcomeRole">
+
+    <View
+        android:id="@+id/topView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:background="@color/orange" />
+
+    <View
+        android:id="@+id/wavelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_below="@+id/topView"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/wave" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center">
+
+        <ImageView android:layout_width="150dp"
+            android:id="@+id/imageView1"
+            android:src="@drawable/logonew1"
+            android:layout_height="150dp"
+            android:scaleType="centerInside" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Welcome"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/wavelayout"
+        android:textSize="50sp"/>
+
+    <TextView
+        android:id="@+id/roleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Please select your role:"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_below="@+id/welcomeText"
+        android:layout_marginBottom="25dp"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/landlordbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/roleText"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/roundborder"
+        android:text="Landlord"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/tenantbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/landlordbtn"
+        android:text="Tenant"
+        android:textColor="@color/black"
+        android:background="@drawable/roundborder"/>
+
+</RelativeLayout>

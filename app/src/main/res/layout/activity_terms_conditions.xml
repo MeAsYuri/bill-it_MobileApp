@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bluebg"
+    tools:context=".TermsConditions">
+
+    <ImageView
+        android:layout_width="342dp"
+        android:layout_height="312dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-60dp"
+        android:src="@drawable/cornercloudlight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="15dp"
+            android:text="Terms and Conditions"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:padding="6dp"
+                    android:text="Welcome to Bill-It. Please read and understand these TERMS AND CONDITIONS prior to completing the registration for an account with Bill-It. The following shall govern the terms under which you may access and use the features of Bill-It. By registering to Bill-It or using the Bill-It App, you accept and agree to be legally bound by the T and Cs. Please also read the Privacy Policy of Bill-It before you use any portion of the Bill-It Service. The Privacy Policy describes how much your personal data is collected and processed when you use the Bill-It Service. If you do not understand or do not wish to be bound by the TandCs or Privacy Policy, you should not access or use any portion of the Bill-It Service. \n\nThese TandCs shall be effective, valid and binding from the time you agreed to it and will exist up to the time that it is terminated by you or us.\n\n
+
+1.	THE BILL-IT SERVICES \n\n
+> The Bill-It Application offer services for computing the water and electricity bill by scanning their respective submeters. Only the submeter will be scanned through the use of Optical Character Recognition (OCR). Other variables that are included in the computation will be inputted manually by the user, this includes previous reading, current reading, due date, etc. Computations done by the tenant will not be saved as an official statement and this will only serve as a way of checking their expected bill. Only the landlord has the authority to save the computations that are done in the landlord’s account.
+\n\n> The application is only available for android mobile devices only. The application does not cater iOS devices.
+\n\n> News and updates such as interruptions, price rates, etc. will be seen through the home of the app. Only news and updates from Meralco, Maynilad, and Manila Water will be shown in the application, other electric and water companies will not be included.
+\n\n> The bills that are included in the receipt of the application are Electricity, Water, and Rent bills of each tenant. Penalties may also be applied if the user fails to pay on time.
+\n\n> The application helps the user stores its billing history for easy access. Both the landlord and tenant will have access in their respective billing statements and history. The billing statement will only be available to the tenant if the landlord has confirmed the details of the statement.
+\n\n> Another service that the application offers is the use of GCash as a mode of payment for users to achieve cashless payment. Nevertheless, they are not obligated to use the payment option and will also have the option to pay personally.
+\n\n> All billing statement and payment receipt may be downloaded through the application.
+\n\n> The user will be responsible for the data that he/she will input in the app. This includes ensuring that all data inputted are correct and does not violate any legal rights of another party.
+
+\n\n2.	REGISTRATION
+\n\n> Only the landlord can register on the application. The accounts of the tenants will be created by the landlord.
+\n\n> The number of units per landlord cannot be edited once the landlord finishes the registration and contract specification process.
+\n\n> The rent status cannot also be updated once the landlord finishes the registration.
+
+\n\n3.	SUBMETERS
+\n\n> The submeters that will be scanned in the app are only those who are installed and connected to the landlord’s main meter. A submeter are one or two meters that are used for measuring a shared buildings energy or water performance. A submeter is typically installed manually by the landlord themselves for the sole purpose of monitoring the tenant’s water and energy consumption.
+\n\n> For the electrical submeter, Meralco allows the use of sub meters as long as it is installed at any point on the load side wire typically after the Meralco meter. (See https://company.meralco.com.ph/faq-about/start-or-modify-service)
+\n\n> For water submeters regarding Maynilad and Manila Water, installation of additional meter to existing connections shall be allowed provided that the prevailing water supply and the required minimum sustained water pressure after the water meter will not be affected.  (See https://ro.mwss.gov.ph/wp-content/uploads/2013/02/IRR-No-2008-06_IRR-on-Additional-Meter-and-Clustered-Meter-Charges.pdf)
+\n\n> If, by chance, there will be cheating involved (e.g. tampering with the submeter), the app will not be liable for those inconveniences since the app’s sole job is to compute the numbers that are shown on the submeter.
+
+\n\n4.	OPTICAL CHARACTER RECOGNITION (OCR)
+\n\n> The Optical Character Recognition (OCR) is used for reading the submeters that will be used for the computation of the bills. The user has the option to manually take the picture while using the app or upload a photo of the submeter for easy convenience.
+\n\n> Please note that the accuracy of the OCR depends on the following conditions:
+    \no Quality of the photo.
+    \no Clearness and readability of the numbers.
+    \no Brightness of the photo.
+    \no Position and angle of the photo.
+    \no Closeness of the numbers shown in the photo.
+    \no Overall condition of the submeter (e.g. dusty, lots of moss, etc.)
+\n\n> The user may modify and improve the quality of the photo before uploading it to the application and may re-upload the picture before continuing with the calculation.
+
+\n\n5. COMPUTATION
+\n\n> The Bill-It Application will use the formula that is stated below for all the computations that will be done through the app.
+\n\n> Electricity Calculation Formula for Submeters:
+        \n Main Total Bill / Main Meter Consumption = Price Rate (kWh)
+        \n\no	Current Reading (kWh) – Previous Reading (kWh) = Consumption (kWh)
+        \no	Consumption (kWh) * Price Rate (kWh) – Total Bill (Pesos) = Electricity Bill (Pesos)
+        \no	Where: kWh = Kilowatt-hour
+\n\n> Water Calculation Formula for Submeters:
+	    \n\no (Total Bill (Pesos))/(Total Consumption (m^3 ) )=Price Rate (m^3)
+	   \n o Current Reading (m^3 )-Previous Reading (m^3 )=Consumption (m^3)
+       \n o Consumption (m^3 )*Price Rate (m^3 )=Water Bill (Pesos)
+        \no Where: m^3 = cubic metre\n
+\n\n> Please note that penalties may be applied to the bill if the tenant fails to pay on the set due date. The percentage of penalty and the time it will take effect will depend on the condition of the landlord. For any concerns, please kindly reach out to your respective landlords.
+\n\n> The landlord can only calculate once per month and per tenant, meaning, once the landlord confirms the calculation and receipt for a specific tenant, he/she can no longer edit anything to it.
+\n\n6. CONTRACT
+\n\n> The contract varies from each landlord so the content of the contracts is not set by the app. The landlord can add his/her own rules to the contract. Make sure to read the contract carefully as it contains your agreement with the landlord. The tenant should download the pdf, sign it, and upload it to the application in order to access his/her own account. Failure to upload the contract may result to not accessing the account fully since the landlord must verify your account first before having full access of the application.
+\n\n7. SMS NOTIFICATION
+\n\n> The application includes an SMS Function that allows you to send text messages to the tenants about their bill and reminders for the deadline. Please take note that when you press the ‘Send SMS’ Button, it will deduct your load balance and use it for sending the message. Therefore, it is essential to ensure that you have sufficient load balance before enabling the “Send SMS” button, as the message won’t be sent if you don’t have enough load..
+"
+                    android:textColor="#000000"
+                    android:textSize="17dp" />
+
+                <LinearLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:background="@android:drawable/bottom_bar"
+                    android:gravity="center_vertical">
+
+                    <Button
+                        android:id="@+id/backSetButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Back"
+                        android:background="#272A79"
+                        android:textColor="@color/black" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backg"
+    android:padding="10dp"
+    tools:context=".Calculate.OcrActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--ImageView-->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageIv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_image_24"
+                android:adjustViewBounds="true"
+                app:strokeWidth="2dp"/>
+
+
+            <!--TextView: label to show what the text is from the image-->
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submeter Reading: "
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/recognizedTextEt"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:paddingStart="15dp"
+                android:background="@drawable/roundborder"
+                android:focusableInTouchMode="true"
+                android:textSize="20sp" />
+
+            <!--Reminders!!!-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reminders:"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Please make sure that the picture is clear and readable\n2. Always check the result of the OCR before continuing.\n3. Make sure that the numbers are within the frame\n4. Zoom in the picture as close as possible for better results."
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--Button: Take Image-->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/inputImageBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Take Image"
+                    app:backgroundTint="#a5cbdb"
+                    app:cornerRadius="5dp"
+                    app:icon="@drawable/ic_baseline_add_a_photo_24"
+                    app:strokeColor="#000000" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/pickImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Crop Image"
+                    app:backgroundTint="#A5CBDB"
+                    app:cornerRadius="5dp"
+                    app:icon="@drawable/ic_baseline_image_24" />
+                <!--Button: Read Text-->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/recognizeTextBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Read Text"
+                    app:backgroundTint="#a5cbdb"
+                    app:cornerRadius="5dp"
+                    app:icon="@drawable/ic_baseline_document_scanner_24" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/proceed_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="25dp"
+                    android:layout_weight="1"
+                    android:text="Proceed"
+                    app:backgroundTint="#a5cbdb"
+                    app:cornerRadius="5dp"
+                    app:icon="@drawable/ic_baseline_document_scanner_24"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

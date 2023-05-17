@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--    </RelativeLayout>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        app:cardBackgroundColor="#C9E1EB">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tenantNoTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenant # "
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tenantNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/tenantNoTxt"/>
+
+            <View
+                android:id="@+id/headerView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tenantNoTxt"/>
+
+            <TextView
+                android:id="@+id/subjTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenant # "
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@id/headerView"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/descConcern"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenant # "
+                android:textSize="20dp"
+                android:layout_below="@id/subjTitle"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/response"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenant # "
+                android:textSize="20dp"
+                android:layout_below="@id/descConcern"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"/>
+
+            <EditText
+                android:id="@+id/responseEnter"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textSize="18dp"
+                android:layout_below="@id/response"
+                android:layout_marginTop="15dp"
+                android:paddingStart="10dp"
+                android:background="@drawable/concerns_list_bg"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/replyResponse"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Reply"
+                android:textColor="@color/black"
+                android:layout_below="@id/responseEnter"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/submitResponse"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Submit"
+                android:textColor="@color/black"
+                android:layout_below="@id/responseEnter"
+                android:layout_marginTop="20dp"
+                android:background="@color/green"
+                android:visibility="gone"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancelResponse"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Cancel"
+                android:textColor="@color/black"
+                android:layout_below="@id/responseEnter"
+                android:layout_toRightOf="@id/submitResponse"
+                android:background="@color/red"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:onClick="expandForm"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

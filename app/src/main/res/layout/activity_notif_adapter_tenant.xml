@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    android:id="@+id/cardViewId"
+    android:clickable="true"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        >
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tenantName"
+            android:text="Account Verification"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tenantId"
+            android:text="Tenant ID:"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tenantName"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/dateId"
+            android:text="Date:"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/tenantId"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/isVerifiedId"
+            android:text="Tenant isVerified:"
+            android:visibility="gone"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/dateId"
+            android:layout_marginLeft="10dp"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/waterId"
+            android:text="Water bill for this month has been calculated."
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:visibility="invisible"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/isVerifiedId"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/elecId"
+            android:text="Electricity bill for this month has been calculated."
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:visibility="invisible"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/isVerifiedId"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/approveId"
+            android:text="Your account has been approved!"
+            android:textSize="20sp"
+            android:visibility="invisible"
+            android:textColor="#000"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/isVerifiedId"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rentId"
+            android:visibility="invisible"
+            android:text="Rent bill for this month has been issued."
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/isVerifiedId"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/payUpdateId"
+            android:text="Your payment has been reviewed by your landlord."
+            android:textSize="20sp"
+            android:visibility="invisible"
+            android:textColor="#000"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/isVerifiedId"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ChartFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:paddingBottom="700dp">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"/>
+
+            <TextView
+                android:id="@+id/charts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="left"
+                android:text="Dashboard"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <!--        <GridLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="match_parent"-->
+            <!--            android:rowCount="4"-->
+            <!--            android:columnCount="2">-->
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="center"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="#C9E1EB">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center_vertical|center_horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:text="Total Number of Tenants"
+                        android:textSize="20dp"
+                        android:layout_marginTop="5dp"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/tenants"/>
+                        <TextView
+                            android:id="@+id/totalTenant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:textAlignment="center"
+                            android:textSize="35dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="2dp"/>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/viewTenants"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View"
+                        android:backgroundTint="@color/orange"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_row="0"-->
+            <!--                android:layout_column="1"-->
+            <!--                android:layout_gravity="fill"-->
+            <!--                android:layout_rowWeight="1"-->
+            <!--                android:layout_columnWeight="1"-->
+            <!--                android:layout_margin="8dp"-->
+            <!--                app:cardCornerRadius="8dp"-->
+            <!--                app:cardElevation="8dp"-->
+            <!--                app:cardBackgroundColor="@color/yellow">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:layout_gravity="center_vertical|center_horizontal">-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/penaltyTenant"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textStyle="bold"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:textSize="26dp"/>-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:text="Tenants\nwith Penalty"-->
+            <!--                        android:textSize="20dp"/>-->
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_row="1"-->
+            <!--                android:layout_column="0"-->
+            <!--                android:layout_gravity="fill"-->
+            <!--                android:layout_rowWeight="1"-->
+            <!--                android:layout_columnWeight="1"-->
+            <!--                android:layout_margin="8dp"-->
+            <!--                app:cardCornerRadius="8dp"-->
+            <!--                app:cardElevation="8dp"-->
+            <!--                app:cardBackgroundColor="@color/green">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:layout_gravity="center_vertical|center_horizontal">-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/paidElec"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textStyle="bold"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:textSize="26dp"/>-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:text="Paid\nElectricity"-->
+            <!--                        android:textSize="20dp"/>-->
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_row="1"-->
+            <!--                android:layout_column="1"-->
+            <!--                android:layout_gravity="fill"-->
+            <!--                android:layout_rowWeight="1"-->
+            <!--                android:layout_columnWeight="1"-->
+            <!--                android:layout_margin="8dp"-->
+            <!--                app:cardCornerRadius="8dp"-->
+            <!--                app:cardElevation="8dp"-->
+            <!--                app:cardBackgroundColor="@color/red">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:layout_gravity="center_vertical|center_horizontal">-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/unpaidElec"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textStyle="bold"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:textSize="26dp"/>-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:text="Unpaid\nElectricity"-->
+            <!--                        android:textSize="20dp"/>-->
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_row="2"-->
+            <!--                android:layout_column="0"-->
+            <!--                android:layout_gravity="fill"-->
+            <!--                android:layout_rowWeight="1"-->
+            <!--                android:layout_columnWeight="1"-->
+            <!--                android:layout_margin="8dp"-->
+            <!--                app:cardCornerRadius="8dp"-->
+            <!--                app:cardElevation="8dp"-->
+            <!--                app:cardBackgroundColor="@color/green">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:layout_gravity="center_vertical|center_horizontal">-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/paidWater"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textStyle="bold"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:textSize="26dp"/>-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:text="Paid Water"-->
+            <!--                        android:textSize="20dp"/>-->
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_row="2"-->
+            <!--                android:layout_column="1"-->
+            <!--                android:layout_gravity="fill"-->
+            <!--                android:layout_rowWeight="1"-->
+            <!--                android:layout_columnWeight="1"-->
+            <!--                android:layout_margin="8dp"-->
+            <!--                app:cardCornerRadius="8dp"-->
+            <!--                app:cardElevation="8dp"-->
+            <!--                app:cardBackgroundColor="@color/red">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:layout_gravity="center_vertical|center_horizontal">-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/unpaidWater"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textStyle="bold"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:textSize="26dp"/>-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:text="Unpaid Water"-->
+            <!--                        android:textSize="20dp"/>-->
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_row="3"-->
+            <!--                android:layout_column="0"-->
+            <!--                android:layout_gravity="fill"-->
+            <!--                android:layout_rowWeight="1"-->
+            <!--                android:layout_columnWeight="1"-->
+            <!--                android:layout_margin="8dp"-->
+            <!--                app:cardCornerRadius="8dp"-->
+            <!--                app:cardElevation="8dp"-->
+            <!--                app:cardBackgroundColor="@color/green">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:layout_gravity="center_vertical|center_horizontal">-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/paidRent"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textStyle="bold"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:textSize="26dp"/>-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:text="Paid Rent"-->
+            <!--                        android:textSize="20dp"/>-->
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+
+            <!--            <androidx.cardview.widget.CardView-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_row="3"-->
+            <!--                android:layout_column="1"-->
+            <!--                android:layout_gravity="fill"-->
+            <!--                android:layout_rowWeight="1"-->
+            <!--                android:layout_columnWeight="1"-->
+            <!--                android:layout_margin="8dp"-->
+            <!--                app:cardCornerRadius="8dp"-->
+            <!--                app:cardElevation="8dp"-->
+            <!--                app:cardBackgroundColor="@color/red">-->
+            <!--                <LinearLayout-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:orientation="vertical"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:layout_gravity="center_vertical|center_horizontal">-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/unpaidRent"-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textStyle="bold"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:textSize="26dp"/>-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:textColor="@color/black"-->
+            <!--                        android:textAlignment="center"-->
+            <!--                        android:text="Unpaid Rent"-->
+            <!--                        android:textSize="20dp"/>-->
+            <!--                </LinearLayout>-->
+            <!--            </androidx.cardview.widget.CardView>-->
+            <!--        </GridLayout>-->
+
+            <TextView
+                android:id="@+id/elecbaltxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tenants Electricity Balances"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/grey_square"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:id="@+id/elecBalance"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <Button
+                android:id="@+id/elecBalanceChart"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Download Chart PDF"
+                android:backgroundTint="@color/gray"
+                android:layout_gravity="right"
+                />
+
+            <!--        <Button-->
+            <!--            android:id="@+id/downloadElecBalance"-->
+            <!--            android:layout_width="wrap_content"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:text="Download PDF"-->
+            <!--            android:layout_gravity="center"-->
+            <!--            android:textColor="@color/black"/>-->
+
+            <TextView
+                android:id="@+id/waterbaltxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tenants Water Balances"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:background="@drawable/grey_square"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:id="@+id/waterBalance"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/waterBalanceChart"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Download Chart PDF"
+                android:backgroundTint="@color/gray"
+                android:layout_gravity="right"
+                />
+
+            <TextView
+                android:id="@+id/renttxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tenants Rent Balances"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:background="@drawable/grey_square"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:id="@+id/rentBalance"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/rentBalanceChart"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Download Chart PDF"
+                android:backgroundTint="@color/gray"
+                android:layout_gravity="right"
+                />
+
+            <TextView
+                android:id="@+id/elecpenaltytxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tenants with Penalties in Electricity"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:background="@drawable/grey_square"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:id="@+id/elecpenaltyBalance"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/elecpenaltyBalanceChart"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Download Chart PDF"
+                android:backgroundTint="@color/gray"
+                android:layout_gravity="right"
+                />
+
+            <TextView
+                android:id="@+id/waterpenaltytxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tenant with Penalties in Water"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:background="@drawable/grey_square"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:id="@+id/waterpenaltyBalance"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/waterpenaltyBalanceChart"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Download Chart PDF"
+                android:backgroundTint="@color/gray"
+                android:layout_gravity="right"
+                />
+
+            <TextView
+                android:id="@+id/rentpenaltytxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Tenant with Penalties in Rent"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:background="@drawable/grey_square"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:id="@+id/rentpenaltyBalance"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/rentpenaltyBalanceChart"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Download Chart PDF"
+                android:backgroundTint="@color/gray"
+                android:layout_gravity="right"
+                />
+
+<!--            <TextView-->
+<!--                android:id="@+id/elecstattxt"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Electricity Tenants Status"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="18sp"-->
+<!--                android:background="@drawable/grey_square"/>-->
+
+<!--            <com.github.mikephil.charting.charts.PieChart-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:id="@+id/elecStatus"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="10dp"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/elecStatusChart"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:text="Download Chart PDF"-->
+<!--                android:backgroundTint="@color/gray"-->
+<!--                android:layout_gravity="right"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/waterstattxt"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Water Tenants Status"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="18sp"-->
+<!--                android:background="@drawable/grey_square"/>-->
+
+<!--            <com.github.mikephil.charting.charts.PieChart-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:id="@+id/waterStatus"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="10dp"/>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/waterStatusChart"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:text="Download Chart PDF"-->
+<!--                android:backgroundTint="@color/gray"-->
+<!--                android:layout_gravity="right"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/rentstattxt"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:gravity="center"-->
+<!--                android:text="Rent Tenants Status"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="18sp"-->
+<!--                android:background="@drawable/grey_square"/>-->
+
+<!--            <com.github.mikephil.charting.charts.PieChart-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:id="@+id/rentStatus"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginBottom="10dp"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/rentStatusChart"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:text="Download Chart PDF"-->
+<!--                android:backgroundTint="@color/gray"-->
+<!--                android:layout_gravity="right"-->
+<!--                />-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

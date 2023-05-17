@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#a5cbdb"
+    tools:context=".ManViewPdf">
+
+
+    <ImageView
+        android:id="@+id/imageViewMay3"
+        android:layout_width="278dp"
+        android:layout_height="204dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="-17dp"
+        android:layout_marginEnd="68dp"
+        android:outlineProvider="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043"
+        app:srcCompat="@drawable/manila" />
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/man_view_Pdf"
+        android:layout_width="wrap_content"
+        android:layout_height="439dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="149dp"
+        android:layout_marginEnd="29dp"
+        android:background="#FFFFFF" />
+
+    <Button
+        android:id="@+id/conf_Man_btn"
+        android:layout_width="172dp"
+        android:layout_height="64dp"
+        android:layout_alignBottom="@+id/man_view_Pdf"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="117dp"
+        android:layout_marginTop="619dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginBottom="-94dp"
+        android:background="#FFDAAF"
+        android:onClick="conf_Man_btn"
+        android:text="Confirm"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

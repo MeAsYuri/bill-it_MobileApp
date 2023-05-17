@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    <RelativeLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content">-->
+
+    <!--    </RelativeLayout>-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        app:cardBackgroundColor="#C9E1EB">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tenantNoTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unit # "
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tenantNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_toRightOf="@+id/tenantNoTxt"/>
+
+            <View
+                android:id="@+id/headerView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/lightgray"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tenantNoTxt"/>
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profileTenant"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:civ_border_color="@color/black"
+                app:civ_border_width="2dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/headerView"
+                android:background="@drawable/circular_border"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/nameTenant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_below="@id/headerView"
+                android:layout_toRightOf="@id/profileTenant"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/rentTenantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rent:"
+                android:textSize="20dp"
+                android:layout_below="@id/nameTenant"
+                android:layout_toRightOf="@id/profileTenant"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/rentTenant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rent"
+                android:textSize="20dp"
+                android:layout_below="@id/nameTenant"
+                android:layout_toRightOf="@id/rentTenantTitle"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"/>
+
+            <TextView
+                android:id="@+id/dateTenantTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date:"
+                android:textSize="20dp"
+                android:layout_below="@id/rentTenant"
+                android:layout_toRightOf="@id/profileTenant"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/dateTenant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textSize="20dp"
+                android:layout_below="@id/rentTenant"
+                android:layout_toRightOf="@id/rentTenantTitle"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp"/>
+
+            <ImageButton
+                android:id="@+id/approveTenant"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_baseline_check_circle_24"
+                android:layout_toLeftOf="@id/deleteTenant"
+                android:background="@null"
+                android:visibility="gone"/>
+
+            <ImageButton
+                android:id="@+id/deleteTenant"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/delete"
+                android:background="@null"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

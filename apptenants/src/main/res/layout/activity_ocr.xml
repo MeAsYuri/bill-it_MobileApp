@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backg"
+    android:padding="10dp"
+    tools:context=".OcrActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--ImageView-->
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageIv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_image_24"
+                android:adjustViewBounds="true"
+                app:strokeWidth="2dp"/>
+
+
+            <!--TextView: label to show what the text is from the image-->
+            <TextView
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submeter Reading: "
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/recognizedTextEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/transparent"
+                android:focusableInTouchMode="true"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--Button: Take Image-->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/inputImageBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Take Image"
+                    app:backgroundTint="#a5cbdb"
+                    app:cornerRadius="5dp"
+                    app:icon="@drawable/ic_baseline_add_a_photo_24"
+                    app:strokeColor="#000000" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/pickImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="1"
+                    android:text="Crop Image"
+                    app:backgroundTint="#A5CBDB"
+                    app:cornerRadius="5dp"
+                    app:icon="@drawable/ic_baseline_image_24" />
+                <!--Button: Read Text-->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/recognizeTextBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:text="Read Text"
+                    app:backgroundTint="#a5cbdb"
+                    app:cornerRadius="5dp"
+                    app:icon="@drawable/ic_baseline_document_scanner_24" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/proceed_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:text="Proceed"
+                    app:backgroundTint="#a5cbdb"
+                    app:cornerRadius="5dp"
+                    app:icon="@drawable/ic_baseline_document_scanner_24" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
